@@ -1,6 +1,6 @@
 #!/bin/bash
 
-command=$(mysql -h220.69.240.175 -uroot -p1234 -D competition_database_final -se "select ANUCTF_COM_IP from anuctf1121_information")
+command=$(mysql -h[ip address] -uroot -p[password] -D [database] -se "select ANUCTF_COM_IP from [table]")
 ip_list=$(echo $command)
 for ANUCTF_COM_IP in $ip_list
 do
